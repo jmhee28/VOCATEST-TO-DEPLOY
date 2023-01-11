@@ -7,7 +7,7 @@ import json
 def index(request):
 
     if request.method == 'POST':
-        file_path = os.path.join(settings.DATAS_DIR, "고_워드마스터수능2000.csv") 
+        file_path = os.path.join(settings.DATAS_DIR, "wordmaster.csv") 
         f = open(file_path, 'r', encoding = 'utf-8')
         try:
             startday = "unit"+request.POST['start']
